@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wertpapier-Rechner</title>
+
+    <style>
+
+        h1{
+            margin-left: 830px;
+        }
+        input {
+            margin-left: 690px;
+            margin-bottom: 15px;
+            font-weight: lighter;
+            width: 500px;
+            height: 30px;
+            text-align: center;
+            font-size: larger;
+        }
+        .Berechnen{
+            font-weight: bolder;
+            width: 300px;
+            margin-left: 620px;
+            height: 30px;
+            background-color: cornflowerblue;
+            color: azure;
+            cursor: pointer;
+            transition: transform 0.1s ease;
+        }
+        .Berechnen:active {
+            transform: scale(0.75);
+        }
+        .Entfernen{
+            font-weight: bolder;
+            width: 300px;
+            margin-left: 20px;
+            height: 30px;
+            background-color: cornflowerblue;
+            color: azure;
+            cursor: pointer;
+            transition: transform 0.1s ease;
+        }
+        .Entfernen:active {
+            transform: scale(0.75);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="h1">
+        <h1>Wertpapier-Rechner</h1>
+    </div>
+    
+    <div class="input" id="input">
+        <input type="number" id="Aktienpreis"   placeholder="Initialer Aktienpreis (€)"><br><br>
+        <input type="number" id="Anzahl"   placeholder="Anzahl der Aktien"><br><br>
+        <input type="number" id="Wachstumsrate"     placeholder="Jährliche Wachstumsrate (%)"><br><br>
+        <input type="number" id="Jahre"  placeholder="Laufzeit (Jahre)"><br><br>
+    </div>
+
+  
+        <button class="Berechnen" onclick="">Berechnen</button>
+        <button class="Entfernen" onclick="">Entfernen</button>
+
+
+
+
+
+</body>
+</html>
